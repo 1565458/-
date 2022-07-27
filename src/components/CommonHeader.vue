@@ -8,7 +8,7 @@
         size="mini"
       ></el-button>
       <!-- <h3 style="color: #fff">首页</h3> -->
-      <el-breadcrumb separator="/">
+      <el-breadcrumb separator="/" class="myColor">
         <el-breadcrumb-item
           v-for="item in tags"
           :key="item.path"
@@ -81,5 +81,7 @@ header {
     border-radius: 50%;
   }
 }
-
+.myColor /deep/ .el-breadcrumb__inner {
+    color:white;
+}
 </style>
